@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: montserrat;
+    background: lightblue;
+}
+
+nav {
+    background: maroon;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: orange;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 70px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 45px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.hover, a:hover {
+    border: 1px solid white;
+    transition: 2s;
+}
+
+.holdingcontainer {
+    width: 100vh;
+    display: flex;
+    background: lightblue;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.internalcontainerL {
+    flex: 1;
+    background: lightblue;
+    padding: 30px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.internalcontainerM {
+    flex: 1;
+    background: yellow;
+    padding: 30px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.internalcontainerR {
+    flex: 1;
+    background: cyan;
+    padding: 30px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rooftop {
+    width: 400px;
+}
+
+h1 {
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .holdingcontainer {
+        flex-direction: row;
+    }
+}
+
+footer {
+    color: black;
+    padding: 20px;
+}
+
+footer a {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
